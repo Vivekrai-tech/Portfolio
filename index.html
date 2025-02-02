@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Vivek's website">
+    <meta name="author" content="Vivek">
+    <title>Vivek Rai</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Steller main styles -->
+	<link rel="stylesheet" href="assets/css/steller.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/imgs/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="#home"><p style="color:secondary;font-size:17px;">Home</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects"><p style="color:secondary;font-size:17px;">Projects</p></a>
+                    </li>             
+                    <li class="nav-item">
+                        <a class="nav-link" href="#awards"><p style="color:secondary;font-size:17px;">Achievements</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><p style="color:secondary;font-size:17px;">About</p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>          
+    </nav>
+    <!-- End of page navibation -->
+
+    <!-- Page Header -->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="infos">
+                <h6 class="subtitle">Hello, I'm</h6>
+                <h6 class="title">Vivek Rai</h6>
+                </br>
+                <p>Microsoft Certified: Power BI Data Analyst Associate </p>
+     
+
+                <div class="socials mt-4">
+                    <a href="https://drive.google.com/file/d/15viUPYgb_IXbDSp4-FLKzTareNV209eZ/view?usp=sharing" class="btn btn-primary rounded">Download CV</a>
+                    <a class="social-item" href="https://www.linkedin.com/in/vivekraitech/"><i class="ti-linkedin"></i></a>
+                    <a class="social-item" href="https://github.com/Vivekrai-tech"><i class="ti-github"></i></a>
+                    <a class="social-item" href="mailto:Vivekrai.tech@gmail.com"><i class="ti-email"></i></a>
+                </div>
+            </div>              
+            <div class="img-holder">
+                <img src="assets/imgs/Vivek_Anime.png" alt="">
+            </div>      
+        </div>  
+
+        
+
+        <!-- Header-widget -->
+        <div class="widget">
+            <div class="widget-item">
+                <h2>5+ Years</h2>
+                <p>Experience</p>
+            </div>
+            <div class="widget-item">
+                <h2>3</h2>
+                <p>Awards Won</p>
+            </div>
+            <div class="widget-item">
+                <h2>15</h2>
+                <p>Certifications</p>
+            </div>
+                 <div class="widget-item"> 
+                    <h2>6</h2> 
+                        <p>Projects</p> 
+                </div> 
+        </div>
+    </header>
+    <!-- End of Page Header -->
+    
+</br>
+</br>
+</br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Data Science Quotes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .quote {
+            font-size: 1.5em;
+            font-style: italic;
+            display: inline; /* Display quote inline */
+        }
+        .author {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-left: 10px; /* Add some space between quote and author */
+            display: inline; /* Display author inline */
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <span class="quote" id="quote">Loading quote...</span>
+        <span class="author" id="author"></span>
+    </div>
+
+    <script>
+        const quotes = [
+            { quote: "Data is the new oil.", author: "Clive Humby" },
+            { quote: "Without data, you're just another person with an opinion.", author: "W. Edwards Deming" },
+            { quote: "Data science is the art of turning data into actions.", author: "Unknown" },
+            { quote: "The goal is to turn data into information, and information into insight.", author: "Carly Fiorina" },
+            { quote: "Data science is not just about data; it's about solving problems.", author: "Unknown" },
+            { quote: "Big data is not about the data; it's about the insights.", author: "Gary King" },
+            { quote: "Data science is the future of artificial intelligence.", author: "Dave Waters" },
+            { quote: "Data is a precious thing and will last longer than the systems themselves.", author: "Tim Berners-Lee" },
+            { quote: "The world is one big data problem.", author: "Andrew McAfee" },
+            { quote: "Data science is the sexiest job of the 21st century.", author: "Harvard Business Review" },
+            { quote: "Data is the lifeblood of decision-making.", author: "Elizabeth Warren" },
+            { quote: "Data science is about finding patterns and making predictions.", author: "Unknown" },
+            { quote: "The best way to predict the future is to create it with data.", author: "Peter Drucker" },
+            { quote: "Data science is the key to unlocking the value of data.", author: "Unknown" },
+            { quote: "Data is the foundation of innovation.", author: "Ginni Rometty" }
+        ];
+
+        let currentQuoteIndex = 0;
+
+        function displayNextQuote() {
+            const quote = quotes[currentQuoteIndex];
+            document.getElementById('quote').textContent = `"${quote.quote}"`;
+            document.getElementById('author').textContent = `- ${quote.author}`;
+
+            // Move to the next quote
+            currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length; // Cycle back to the start after the last quote
+        }
+
+        // Display the first quote immediately
+        displayNextQuote();
+
+        // Change the quote every 5 seconds (5000 milliseconds)
+        setInterval(displayNextQuote, 5000);
+    </script>
+
+</body>
+</html> 
+    <!-- Project section -->
+    <section id="Projects" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">I have honned my skills by developing below Projects</h6>
+            <h6 class="section-title mb-4">Projects</h6>
+            <p class="mb-5 pb-4">Here are some of my Projects where I applied my skills of Data Analysis,data cleaning,data trasnformation and visualization </p>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="figure-img">
+                       <a href="https://github.com/Vivekrai-tech/Dashboarding-in-Excel/tree/main/Ecommerce%20Sales%20Analysis%20Dashboard">
+                        <img src="assets/github project images/Ecommerce Dashboard Screenshot.png" alt="" class="img-thumbnail mb-0">
+                        </a>
+                      <div class="overlay">
+                        <div class="overlay-infos">
+                          <h5>Ecommerce sales Analysis Dashboarding using Excel</h5>
+                        </div>                              
+                      </div>
+                    </div>      
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="figure-img">
+                       <a href="https://github.com/Vivekrai-tech/Dashboarding-using-PowerBI">
+                        <img src="assets/github project images/AltiQ Hardware Insights Dashboard.png" alt="" class="img-thumbnail mb-0">
+                        </a>
+                      <div class="overlay">
+                        <div class="overlay-infos">
+                          <h5> Power BI Dashboard for AltiQ hardware</h5>
+                        </div>                              
+                      </div>
+                    </div>      
+                  </div>
+                
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Project section -->
+
+
+
+    <!-- Awards and Certification section -->
+    <section id="awards" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Achievements</h6>
+            <h6 class="section-title mb-4">Certifications and Awards</h6>
+            <p class="mb-5 pb-4">Here are some of my awards and achievements in past</p>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="figure-img">
+                        <img src="assets/awards_cert/yellow belt.jpg" alt="" class="img-thumbnail mb-0">
+                      <div class="overlay">
+                        <div class="overlay-infos">
+                          <h5>Lean Six Sigma Yellow Belt</h5>
+                          <h6>AIGPE</h6>
+                        </div>                              
+                      </div>
+                    </div>      
+                  </div>
+
+                <div class="col-sm-4">
+                    <div class="figure-img">
+                      <a href="https://learn.microsoft.com/api/credentials/share/en-us/VivekRai-0199/E6C5567441641123?sharingId=B7BA943FCEDF36E9">
+                        <img src="assets/awards_cert/Microsoft AZ-900.png" alt="" class="img-thumbnail mb-0">
+                      </a>
+                      <div class="overlay">
+                        <div class="overlay-infos">
+                          <h5>Mircosoft Azure Fundamentals</h5>
+                          <h6>Microsoft</h6>
+                        </div>                              
+                      </div>
+                    </div>      
+                  </div>
+ 
+                  <div class="col-sm-4">
+                    <div class="figure-img">
+                      <a href="https://learn.microsoft.com/api/credentials/share/en-us/VivekRai-0199/2C18AB40BD55BBD6?sharingId=B7BA943FCEDF36E9">
+                        <img src="assets/awards_cert/dp.jpg" alt="" class="img-thumbnail mb-0">
+                      </a>
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Microsoft Azure Data Fundamentals</h5>
+                                <h6>Microsoft </h6>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="figure-img">
+                      <a href="https://learn.microsoft.com/api/credentials/share/en-us/VivekRai-0199/F65EBAF538B8DAD2?sharingId=B7BA943FCEDF36E9">
+                        <img src="assets/awards_cert/Microsoft certified Power BI Analyst.png" alt="" class="img-thumbnail mb-0">
+                      </a>
+                      <div class="overlay">
+                        <div class="overlay-infos">
+                          <h5>Microsoft certified Power BI Data Analyst Associate</h5>
+                          <h6>Microsoft</h6>
+                        </div>                              
+                      </div>
+                    </div>      
+                  </div>
+                
+                <div class="col-sm-4">
+                    <div class="figure-img">
+                        <img src="assets/awards_cert/insta award.jpg" alt="" class="img-thumbnail mb-0">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Insta Award</h5>
+                                <h6>Infosys </h6>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="figure-img">
+                      <a href="https://www.coursera.org/account/accomplishments/professional-cert/NTYRULQJN3ZZ">
+                        <img src="assets/awards_cert/Google data certifications.jpeg" alt="" class="img-thumbnail mb-0">
+                      </a>
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Google data Analytics certifications</h5>
+                                <h6>Google </h6>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="figure-img">
+                        <img src="assets/awards_cert/Retail Ideathon.jpg" alt="" class="img-thumbnail mb-0">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Infosys Retail Ideathon</h5>
+                                <h6>Infosys </h6>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="figure-img">
+                        <img src="assets/awards_cert/white belt.jpg" alt="" class="img-thumbnail mb-0">
+                      <div class="overlay">
+                        <div class="overlay-infos">
+                          <h5>Lean Six Sigma White Belt</h5>
+                          <h6>AIGPE</h6>
+                        </div>                              
+                      </div>
+                    </div>      
+                  </div>
+
+                
+                  <div class="col-sm-4">
+                    <div class="figure-img">
+                        <img src="assets/awards_cert/cobalt ideathon.png" alt="" class="img-thumbnail mb-0">
+                      <div class="overlay">
+                        <div class="overlay-infos">
+                          <h5>Infosys cobalt ideathon</h5>
+                          <h6>Infosys</h6>
+                        </div>                              
+                      </div>
+                    </div>      
+                  </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- End of awards section -->
+
+    <!-- About section -->
+    <section id="about" class="section mt-3">
+        <div class="container">
+            <div class="card primary">
+                <div class="btn btn-primary rounded">
+                    <div class="row align-items-center">
+                        <div class="col-sm-9 text-center text-sm-left">
+                            <h1 class="mt-0">About me</h1>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="assets/imgs/Vivek.jpeg" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h6 class="title">Vivek Rai</h6>
+                    <p class="subtitle">Business Intelligence Analyst</p>
+                    <p align="justify">Business Intelligence Analyst with over 5 years of experience delivering actionable insights and data-driven strategies. Developed 15+ Power BI dashboards that reduced reporting time by 30%, enabling faster decision-making for stakeholders. Spearheaded data cleaning and modeling for datasets exceeding 10 million rows, leading to a 20% improvement in forecast accuracy. Engaged with cross-functional teams to troubleshoot technical issues, optimize reporting processes, and implement predictive analytics, contributing to a 10% revenue increase. Proficient in Power BI, SQL, Python, Excel, and Tableau, with proven experience in aligning technical solutions with business objectives.</p>
+                    <p style="font-size:21px" ><b>Education:</b></p>
+                    
+                    <ul>
+                        <li style="font-size:17.5px">Masters in Data analytics,National College of Ireland</li>
+                        <li style="font-size:17.5px">Bachelors of Engineering, Mumbai University</li>
+                    </ul>
+                </p>
+
+                <p style="font-size:21px" ><b>Certifications:</b></p>
+                    
+                <ul>
+                    <li style="font-size:17.5px">Microsoft Certified: Azure Data Fundamentals (DP-900)</li>
+                    <li style="font-size:17.5px">Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+                    <li style="font-size:17.5px">Microsoft Certified: Power BI Data Analyst Associate (PL-300)</li>
+                    <li style="font-size:17.5px">Google Certified: Data Analytics Professional</li>
+                    <li style="font-size:17.5px">AIGPE Certified Lean Six Sigma Yellow Belt</li>
+
+                </ul>
+            </p>
+                
+                    <a href="https://drive.google.com/file/d/15viUPYgb_IXbDSp4-FLKzTareNV209eZ/view?usp=sharing" class="btn btn-primary rounded mt-3">DOWNLOAD CV</a>
+                    <a href="https://www.linkedin.com/in/vivekraitech/" class="btn btn-primary rounded mt-3">LINKEDIN</a>
+                    <a href="vivekrai.tech@gmail.com" class="btn btn-primary rounded mt-3">EMAIL</a>
+                    <a href="https://github.com/Vivekrai-tech" class="btn btn-primary rounded mt-3">GITHUB</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                </div>
+                <div class="col-sm-6">
+                    <div class="socials">                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <!-- End of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
+
+</body>
+</html>
